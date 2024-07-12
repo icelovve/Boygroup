@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    background-color: #223046;
+    padding: 4px 0 0 0;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .logo-board{
+    margin-left: 12%;
+}
+
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12%;
+}
+
+.nav-list .nav-item{
+    list-style: none;
+}
+
+.nav-list .nav-item .nav-link{
+    color: #ffffff;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ Navbar */
+}
+
+/* Animation for showing the navbar */
+@keyframes showNavbar {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for hiding the navbar */
+@keyframes hideNavbar {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+/* Apply animation to the navbar */
+nav {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-hide {
+    animation: hideNavbar 0.3s forwards;
+}
+
+.nav-show {
+    animation: showNavbar 0.3s forwards;
+}
+
+
+.img-first img{
+    width: 100%;
+    height: auto;
+}
+
+.kami-melayani{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.kami-melayani .content-text,
+.armada-kami .content-text{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.kami-melayani .content-text h1,
+.armada-kami .content-text h1{
+    color: #223046;
+}
+
+.kami-melayani .content-text span,
+.armada-kami .content-text span{
+    color: #357BE8;
+}
+
+.kami-melayani .content-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.kami-melayani .content-img .img-kami-melayani{
+    margin: 10px 20px 0 20px;
+}
+
+.armada-kami .content-products .products img,
+.armada-kami .content-products-two .products img{
+    width: 70%;
+    height: auto;
+}
+
+.armada-kami{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.armada-kami .content-products,
+.armada-kami .content-products-two{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-bottom: 60px;
+}
+
+.armada-kami .content-products .products h2,
+.armada-kami .content-products-two .products h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.armada-kami .content-products .products li,
+.armada-kami .content-products .products p,
+.armada-kami .content-products-two .products li,
+.armada-kami .content-products-two .products p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.armada-kami .content-products .products h5,
+.armada-kami .content-products-two .products h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+.armada-kami .content-products .products button,
+.armada-kami .content-products-two .products button{
+    color: #ffffff;
+    background-color: #357BE8;
+    border: none;
+    border-radius: 23px;
+    padding: 12px 36px;
+}
+
+.armada-kami .content-products .products button:hover,
+.armada-kami .content-products-two .products button:hover{
+    cursor: pointer;
+}
+
+.box-slidshow-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-slidshow-img .text{
+    color: #357BE8;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.box-slidshow-img img{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+}
+
+.slideshow-container .dot {
+    display: flex;
+    justify-content: center;
+}
+
+.text-dot {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #223046;
+}
+
+.content-contact img{
+    margin-bottom: 0px;
+    height: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #223046;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-center img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-center a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
